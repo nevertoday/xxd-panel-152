@@ -1,0 +1,4 @@
+interface:
+  display_name: "XXD Panel 152"
+  short_description: "Colour-field Paper Base"
+  default_prompt: "Use $xxd-panel-152 to transform my photograph using the complete canonical source brief."
