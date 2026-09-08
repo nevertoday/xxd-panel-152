@@ -106,18 +106,6 @@ XXD هو اختصار اسم علامة Xiaoxiaodong. أنشأ المشروع و
 [Knowledge Planet](https://wx.zsxq.com/group/15554814142882) · [Member Prompt Library](https://vip.xiaoxiaodong.ai/)
 
 <p align="center"><a href="https://xiaoxiaodong.pages.dev/assets/wechat-qr.png"><img src="https://xiaoxiaodong.pages.dev/assets/wechat-qr.png" alt="XXD WeChat" width="280"></a></p>
-
----
-
-<div align="center" dir="rtl">
-
-## ☕ دعم المشروع المفتوح المصدر
-
-إذا أفادك المشروع، يمكنك دعمه اختيارياً عبر Buy Me a Coffee.
-
-<p align="center"><a href="https://github.com/nevertoday/zhongguo-traditional-colors/blob/main/docs/images/buy-me-a-coffee-qr.png?raw=true"><img src="https://github.com/nevertoday/zhongguo-traditional-colors/blob/main/docs/images/buy-me-a-coffee-qr.png?raw=true" alt="Buy Me a Coffee" width="180"></a></p>
-
-</div>
 <!-- xxd-readme-ads:end -->
 
 ## الترخيص

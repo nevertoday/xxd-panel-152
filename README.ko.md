@@ -106,18 +106,6 @@ XXD는 Xiaoxiaodong 브랜드 이름의 약자입니다. 제작 및 유지관리
 [Knowledge Planet](https://wx.zsxq.com/group/15554814142882) · [Member Prompt Library](https://vip.xiaoxiaodong.ai/)
 
 <p align="center"><a href="https://xiaoxiaodong.pages.dev/assets/wechat-qr.png"><img src="https://xiaoxiaodong.pages.dev/assets/wechat-qr.png" alt="XXD WeChat" width="280"></a></p>
-
----
-
-<div align="center">
-
-## ☕ 오픈 소스 프로젝트 후원
-
-프로젝트가 도움이 되었다면 Buy Me a Coffee로 자율 후원할 수 있습니다.
-
-<p align="center"><a href="https://github.com/nevertoday/zhongguo-traditional-colors/blob/main/docs/images/buy-me-a-coffee-qr.png?raw=true"><img src="https://github.com/nevertoday/zhongguo-traditional-colors/blob/main/docs/images/buy-me-a-coffee-qr.png?raw=true" alt="Buy Me a Coffee" width="180"></a></p>
-
-</div>
 <!-- xxd-readme-ads:end -->
 
 ## 라이선스
