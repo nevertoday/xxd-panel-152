@@ -10,7 +10,7 @@
 
 ## عرض النماذج
 
-本项目已发布 8 张实际样片，图片文件位于 `assets/examples/`。
+本项目已发布 8 张实际样片，包含横版与竖版，图片文件位于 `assets/examples/`。
 
 | sample-05 | sample-07 | sample-09 | sample-11 |
 | --- | --- | --- | --- |
