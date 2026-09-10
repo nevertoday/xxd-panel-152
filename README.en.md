@@ -37,25 +37,6 @@ In the lower half, extract the photograph's most recognizable **subject, silhoue
 - **Clarify reality and design regions:** for top-bottom or left-right, say which region keeps the photograph and which region is redesigned; for design-only and wallpapers, say that the whole canvas is redesigned.
 - **Test one image before batching:** confirm mode, ratio, text, and language on one source, then reuse the settings for a folder; change one variable per iteration.
 
-## Original prompt · five languages
-
-[简体中文](references/original-prompt/zh-CN.md) · [English](references/original-prompt/en.md) · [日本語](references/original-prompt/ja.md) · [한국어](references/original-prompt/ko.md) · [العربية](references/original-prompt/ar.md)
-
-The Chinese file preserves the user's original prompt verbatim and is the sole runtime creative and aesthetic authority. The other four files are complete, faithful reading translations and never rewrite the generation instructions.
-
-## Quick fit check
-
-Keep the source identity while redirecting composition; retain the material signature while actively leaving space. Choose exact text, generated copy or no text, with single-image or recursive directory processing and the four delivery modes below.
-
-## Four output modes
-
-- `top-bottom`: exactly two full-width regions, reality above and design below, 50% each.
-- `left-right`: exactly two full-height regions, reality left and design right, 50% each; it never rotates into a top-bottom layout.
-- `design-only`: the full canvas contains only Panel 152's designed translation; the photograph remains a non-visible reference.
-- `wallpaper-pack`: creates complete artworks for phone, iPad, desktop, and watch, either `linked` as a coherent family or `independent` as four separate works.
-
-Modes and sizes may be combined. Supported sizes include `1:1`, `3:4`, `4:3`, `4:5`, `5:4`, `2:3`, `3:2`, `9:16`, `16:9`, `21:9`, `5:7`, `7:5`, and exact pixels. Text can be prompt-generated, user-exact, or absent. A directory is inventoried recursively and every source is isolated while sharing one set of delivery settings; final PNG files remain flat in one fresh task directory.
-
 ## Getting started
 
 ```bash
@@ -75,6 +56,25 @@ Common examples:
 ```
 
 See [SKILL.md](SKILL.md) for the full runtime contract and the [English](references/xxd-panel-152-prompt.en.md) or [Chinese](references/xxd-panel-152-prompt.zh-CN.md) runtime adapter.
+
+## Original prompt · five languages
+
+[简体中文](references/original-prompt/zh-CN.md) · [English](references/original-prompt/en.md) · [日本語](references/original-prompt/ja.md) · [한국어](references/original-prompt/ko.md) · [العربية](references/original-prompt/ar.md)
+
+The Chinese file preserves the user's original prompt verbatim and is the sole runtime creative and aesthetic authority. The other four files are complete, faithful reading translations and never rewrite the generation instructions.
+
+## Quick fit check
+
+Keep the source identity while redirecting composition; retain the material signature while actively leaving space. Choose exact text, generated copy or no text, with single-image or recursive directory processing and the four delivery modes below.
+
+## Four output modes
+
+- `top-bottom`: exactly two full-width regions, reality above and design below, 50% each.
+- `left-right`: exactly two full-height regions, reality left and design right, 50% each; it never rotates into a top-bottom layout.
+- `design-only`: the full canvas contains only Panel 152's designed translation; the photograph remains a non-visible reference.
+- `wallpaper-pack`: creates complete artworks for phone, iPad, desktop, and watch, either `linked` as a coherent family or `independent` as four separate works.
+
+Modes and sizes may be combined. Supported sizes include `1:1`, `3:4`, `4:3`, `4:5`, `5:4`, `2:3`, `3:2`, `9:16`, `16:9`, `21:9`, `5:7`, `7:5`, and exact pixels. Text can be prompt-generated, user-exact, or absent. A directory is inventoried recursively and every source is isolated while sharing one set of delivery settings; final PNG files remain flat in one fresh task directory.
 
 <!-- xxd-readme-ads:start -->
 ## About XXD

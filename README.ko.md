@@ -37,6 +37,23 @@
 - **사진 영역과 디자인 영역을 설명하세요:** 상하·좌우에서는 사진을 남길 쪽과 다시 디자인할 쪽을 말하고, 순수 디자인·배경화면은 전체 캔버스를 다시 설계한다고 알려 주세요.
 - **한 장을 먼저 시험한 뒤 일괄 처리하세요:** 모드, 비율, 텍스트, 언어를 한 장에서 확인하고 같은 설정을 폴더에 적용합니다. 비교를 위해 한 번에 한 변수만 바꾸세요.
 
+## 시작하기
+
+```bash
+git clone https://github.com/nevertoday/xxd-panel-152.git
+npx skills add https://github.com/nevertoday/xxd-panel-152 --skill xxd-panel-152
+```
+
+설치 후 Agent 세션을 다시 시작하고 `$xxd-panel-152`을 호출하세요. 사용자 단위 Codex 설치에는 `--global --agent codex --yes`를 추가할 수 있습니다.
+
+```text
+/xxd-panel-152 photo.jpg --mode top-bottom --size 3:4 --text prompt --locale ko-KR
+/xxd-panel-152 photo.jpg --mode left-right --size 16:9 --text prompt --locale en-US
+/xxd-panel-152 photo.jpg --mode design-only --size 9:16 --text none
+```
+
+전체 실행 계약은 [SKILL.md](SKILL.md), 런타임 어댑터는 [영어](references/xxd-panel-152-prompt.en.md)와 [중국어](references/xxd-panel-152-prompt.zh-CN.md)를 확인하세요.
+
 ## 원본 프롬프트 · 5개 언어
 
 [简体中文](references/original-prompt/zh-CN.md) · [English](references/original-prompt/en.md) · [日本語](references/original-prompt/ja.md) · [한국어](references/original-prompt/ko.md) · [العربية](references/original-prompt/ar.md)
@@ -55,23 +72,6 @@
 - `wallpaper-pack`: 휴대폰, iPad, 데스크톱, 시계용 완성 이미지를 각각 만들며 `linked` 또는 `independent`를 선택합니다.
 
 모드와 크기는 여러 개 선택할 수 있습니다. `1:1`, `3:4`, `4:3`, `4:5`, `5:4`, `2:3`, `3:2`, `9:16`, `16:9`, `21:9`, `5:7`, `7:5`, 정확한 픽셀을 지원합니다. 텍스트는 모델 생성, 사용자 원문, 없음 중에서 선택합니다. 폴더 입력은 각 소스를 분리 처리하고 최종 PNG를 하나의 새 작업 폴더에 평면으로 저장합니다.
-
-## 시작하기
-
-```bash
-git clone https://github.com/nevertoday/xxd-panel-152.git
-npx skills add https://github.com/nevertoday/xxd-panel-152 --skill xxd-panel-152
-```
-
-설치 후 Agent 세션을 다시 시작하고 `$xxd-panel-152`을 호출하세요. 사용자 단위 Codex 설치에는 `--global --agent codex --yes`를 추가할 수 있습니다.
-
-```text
-/xxd-panel-152 photo.jpg --mode top-bottom --size 3:4 --text prompt --locale ko-KR
-/xxd-panel-152 photo.jpg --mode left-right --size 16:9 --text prompt --locale en-US
-/xxd-panel-152 photo.jpg --mode design-only --size 9:16 --text none
-```
-
-전체 실행 계약은 [SKILL.md](SKILL.md), 런타임 어댑터는 [영어](references/xxd-panel-152-prompt.en.md)와 [중국어](references/xxd-panel-152-prompt.zh-CN.md)를 확인하세요.
 
 <!-- xxd-readme-ads:start -->
 ## XXD 소개

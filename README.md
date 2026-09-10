@@ -37,25 +37,6 @@
 - **说明现实区与设计区：** 上下或左右对照时，注明哪一侧保留照片、哪一侧负责设计转译；纯设计和壁纸则说明整张画布都要重新设计。
 - **先单张试，再批量做：** 先用一张图确认模式、比例、文字和语言，再把同一套参数用于目录批处理；每轮只改一个变量，结果更容易比较。
 
-## 原始提示词 · 五种语言
-
-[简体中文](references/original-prompt/zh-CN.md) · [English](references/original-prompt/en.md) · [日本語](references/original-prompt/ja.md) · [한국어](references/original-prompt/ko.md) · [العربية](references/original-prompt/ar.md)
-
-中文文件逐字保留用户原始提示词，是运行时唯一的创作与审美权威。其余四语为完整、忠实的阅读译文，不参与改写生成指令。
-
-## 快速判断：Panel 152 适合你吗？
-
-既要保留源图身份，也要重新构图；既要材质特征，也要主动留白。可选准确文字、智能文案或无文字；支持单图、递归目录批量以及下方四种交付模式。
-
-## 四种输出模式
-
-- `top-bottom`：整张画布只有上下两个全宽区域，现实照片在上、设计在下，严格各占 50%。
-- `left-right`：整张画布只有左右两个全高区域，现实照片在左、设计在右，严格各占 50%，不会旋转成上下结构。
-- `design-only`：整张画布只呈现 Panel 152 的设计转译，照片只作为不可见参考。
-- `wallpaper-pack`：按手机、iPad、桌面和手表分别生成完整设计壁纸，可选 `linked` 连贯套装或 `independent` 四张独立。
-
-支持多选模式与比例（`1:1`、`3:4`、`4:3`、`4:5`、`5:4`、`2:3`、`3:2`、`9:16`、`16:9`、`21:9`、`5:7`、`7:5` 或准确像素），以及模型生成文字、准确文字和无文字。传入目录会递归扫描图片，每张源图独立处理，共用一次交付设置；最终 PNG 平铺放入一个新任务目录。
-
 ## 开始使用
 
 ```bash
@@ -75,6 +56,25 @@ npx skills add https://github.com/nevertoday/xxd-panel-152 --skill xxd-panel-152
 ```
 
 完整运行契约见 [SKILL.md](SKILL.md)；运行适配器见 [英文](references/xxd-panel-152-prompt.en.md) 与 [中文](references/xxd-panel-152-prompt.zh-CN.md)。
+
+## 原始提示词 · 五种语言
+
+[简体中文](references/original-prompt/zh-CN.md) · [English](references/original-prompt/en.md) · [日本語](references/original-prompt/ja.md) · [한국어](references/original-prompt/ko.md) · [العربية](references/original-prompt/ar.md)
+
+中文文件逐字保留用户原始提示词，是运行时唯一的创作与审美权威。其余四语为完整、忠实的阅读译文，不参与改写生成指令。
+
+## 快速判断：Panel 152 适合你吗？
+
+既要保留源图身份，也要重新构图；既要材质特征，也要主动留白。可选准确文字、智能文案或无文字；支持单图、递归目录批量以及下方四种交付模式。
+
+## 四种输出模式
+
+- `top-bottom`：整张画布只有上下两个全宽区域，现实照片在上、设计在下，严格各占 50%。
+- `left-right`：整张画布只有左右两个全高区域，现实照片在左、设计在右，严格各占 50%，不会旋转成上下结构。
+- `design-only`：整张画布只呈现 Panel 152 的设计转译，照片只作为不可见参考。
+- `wallpaper-pack`：按手机、iPad、桌面和手表分别生成完整设计壁纸，可选 `linked` 连贯套装或 `independent` 四张独立。
+
+支持多选模式与比例（`1:1`、`3:4`、`4:3`、`4:5`、`5:4`、`2:3`、`3:2`、`9:16`、`16:9`、`21:9`、`5:7`、`7:5` 或准确像素），以及模型生成文字、准确文字和无文字。传入目录会递归扫描图片，每张源图独立处理，共用一次交付设置；最终 PNG 平铺放入一个新任务目录。
 
 <!-- xxd-readme-ads:start -->
 ## 关于 XXD

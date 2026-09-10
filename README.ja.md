@@ -37,6 +37,23 @@
 - **写真領域とデザイン領域を伝える：** 上下・左右では写真を残す側と再設計する側を指定し、デザインのみ・壁紙では全画面を再設計すると伝えます。
 - **一枚で試してから一括処理する：** モード、比率、文字、言語を一枚で確認し、同じ設定をフォルダに適用します。比較しやすいよう一度に一つだけ変更します。
 
+## はじめに
+
+```bash
+git clone https://github.com/nevertoday/xxd-panel-152.git
+npx skills add https://github.com/nevertoday/xxd-panel-152 --skill xxd-panel-152
+```
+
+インストール後に Agent セッションを再起動し、`$xxd-panel-152` を呼び出します。ユーザー単位の Codex には `--global --agent codex --yes` を追加できます。
+
+```text
+/xxd-panel-152 photo.jpg --mode top-bottom --size 3:4 --text prompt --locale ja-JP
+/xxd-panel-152 photo.jpg --mode left-right --size 16:9 --text prompt --locale en-US
+/xxd-panel-152 photo.jpg --mode design-only --size 9:16 --text none
+```
+
+完全な実行契約は [SKILL.md](SKILL.md)、実行アダプターは[英語](references/xxd-panel-152-prompt.en.md)／[中国語](references/xxd-panel-152-prompt.zh-CN.md)を参照してください。
+
 ## 原文プロンプト · 5言語
 
 [简体中文](references/original-prompt/zh-CN.md) · [English](references/original-prompt/en.md) · [日本語](references/original-prompt/ja.md) · [한국어](references/original-prompt/ko.md) · [العربية](references/original-prompt/ar.md)
@@ -55,23 +72,6 @@
 - `wallpaper-pack`：スマートフォン、iPad、デスクトップ、時計を端末ごとに生成。`linked` または `independent` を選べます。
 
 モードと比率は複数指定できます。`1:1`、`3:4`、`4:3`、`4:5`、`5:4`、`2:3`、`3:2`、`9:16`、`16:9`、`21:9`、`5:7`、`7:5`、正確なピクセルに対応します。文字はプロンプト生成、指定文の逐字使用、なしから選べます。フォルダ入力では各画像を分離して処理し、PNGを一つの新しいタスクフォルダへ置きます。
-
-## はじめに
-
-```bash
-git clone https://github.com/nevertoday/xxd-panel-152.git
-npx skills add https://github.com/nevertoday/xxd-panel-152 --skill xxd-panel-152
-```
-
-インストール後に Agent セッションを再起動し、`$xxd-panel-152` を呼び出します。ユーザー単位の Codex には `--global --agent codex --yes` を追加できます。
-
-```text
-/xxd-panel-152 photo.jpg --mode top-bottom --size 3:4 --text prompt --locale ja-JP
-/xxd-panel-152 photo.jpg --mode left-right --size 16:9 --text prompt --locale en-US
-/xxd-panel-152 photo.jpg --mode design-only --size 9:16 --text none
-```
-
-完全な実行契約は [SKILL.md](SKILL.md)、実行アダプターは[英語](references/xxd-panel-152-prompt.en.md)／[中国語](references/xxd-panel-152-prompt.zh-CN.md)を参照してください。
 
 <!-- xxd-readme-ads:start -->
 ## XXD について
