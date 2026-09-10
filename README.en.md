@@ -12,8 +12,8 @@ Redirect an everyday photograph into a standalone art poster, preserving its rec
 
 本项目已发布 8 张实际样片，包含横版与竖版，图片文件位于 `assets/examples/`。
 
-| sample-05 | sample-07 | sample-09 | sample-11 |
-| --- | --- | --- | --- |
+| sample-05 | sample-06 |
+| --- | --- |
 | ![sample-05](assets/examples/sample-05.png) | ![sample-06](assets/examples/sample-06.png) |
 | sample-07 | sample-08 |
 | ![sample-07](assets/examples/sample-07.png) | ![sample-08](assets/examples/sample-08.png) |
