@@ -10,23 +10,17 @@
 
 ## عرض النماذج
 
-تستخدم النماذج التالية مراجع أصلية مختلفة. أنشأ Panel 152 كل عمل بصورة مستقلة وفي جولة توليد واحدة، وقد أزيلت البيانات الوصفية للذكاء الاصطناعي. النماذج الأفقية تقسيمها صارم 50:50: الواقع يساراً والتصميم يميناً؛ والنماذج العمودية تقسيمها صارم 50:50: الواقع أعلى والتصميم أسفل.
+本项目已发布 8 张实际样片，图片文件位于 `assets/examples/`。
 
-**16:9 أفقي · يسار/يمين 50:50**
-
-| sample-05 | sample-06 |
-|---|---|
+| sample-05 | sample-07 | sample-09 | sample-11 |
+| --- | --- | --- | --- |
 | ![sample-05](assets/examples/sample-05.png) | ![sample-06](assets/examples/sample-06.png) |
+| sample-07 | sample-08 |
 | ![sample-07](assets/examples/sample-07.png) | ![sample-08](assets/examples/sample-08.png) |
-
-**3:4 عمودي · أعلى/أسفل 50:50**
-
 | sample-09 | sample-10 |
-|---|---|
 | ![sample-09](assets/examples/sample-09.png) | ![sample-10](assets/examples/sample-10.png) |
+| sample-11 | sample-12 |
 | ![sample-11](assets/examples/sample-11.png) | ![sample-12](assets/examples/sample-12.png) |
-
-تستخدم النماذج عبارات إنجليزية قصيرة وذكية مستمدة من كل صورة أصلية.
 
 ## الحالات المناسبة والمشكلات التي يحلها
 

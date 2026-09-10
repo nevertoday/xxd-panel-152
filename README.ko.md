@@ -10,23 +10,17 @@
 
 ## 샘플 작품
 
-아래 샘플은 서로 다른 원본 참고 이미지를 사용했습니다. Panel 152이 각 이미지를 독립적으로 한 번만 생성했으며 AI 메타데이터도 제거했습니다. 가로 샘플은 왼쪽 원본·오른쪽 디자인의 정확한 50:50, 세로 샘플은 위 원본·아래 디자인의 정확한 50:50입니다.
+本项目已发布 8 张实际样片，图片文件位于 `assets/examples/`。
 
-**16:9 가로 · 좌우 50:50**
-
-| sample-05 | sample-06 |
-|---|---|
+| sample-05 | sample-07 | sample-09 | sample-11 |
+| --- | --- | --- | --- |
 | ![sample-05](assets/examples/sample-05.png) | ![sample-06](assets/examples/sample-06.png) |
+| sample-07 | sample-08 |
 | ![sample-07](assets/examples/sample-07.png) | ![sample-08](assets/examples/sample-08.png) |
-
-**3:4 세로 · 상하 50:50**
-
 | sample-09 | sample-10 |
-|---|---|
 | ![sample-09](assets/examples/sample-09.png) | ![sample-10](assets/examples/sample-10.png) |
+| sample-11 | sample-12 |
 | ![sample-11](assets/examples/sample-11.png) | ![sample-12](assets/examples/sample-12.png) |
-
-샘플은 각 원본 사진에 맞춘 짧고 영리한 영어 문구를 사용합니다.
 
 ## 잘 맞는 상황과 해결하는 문제
 
