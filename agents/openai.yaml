@@ -1,4 +1,4 @@
 interface:
   display_name: "XXD Panel 152"
-  short_description: "Colour-field Paper Base"
-  default_prompt: "Use $xxd-panel-152 to transform my photograph using the complete canonical source brief."
+  short_description: "色场基座纸艺志：把照片主体剪成纸片拼贴，稳稳落在一条贯穿底部的纯色基座上"
+  default_prompt: "Use $xxd-panel-152 to turn my photo into Colour-field Paper Base artwork."

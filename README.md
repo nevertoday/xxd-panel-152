@@ -2,79 +2,189 @@
 
 # XXD Panel 152｜色场基座纸艺志
 
-把普通照片重新导演成可独立使用的艺术海报；保留主体记忆点，让材质、构图与留白共同工作。
+**把照片主体剪成几片纸，拼贴在一条横贯底部的纯色色带上。**
 
-<a href="README.md">简体中文</a> · <a href="README.en.md">English</a> · <a href="README.ja.md">日本語</a> · <a href="README.ko.md">한국어</a> · <a href="README.ar.md">العربية</a>
+<strong>简体中文</strong> · <a href="README.en.md">English</a> · <a href="README.ja.md">日本語</a> · <a href="README.ko.md">한국어</a> · <a href="README.ar.md">العربية</a>
 
 </div>
 
-## 样张展示
+<table>
+  <tr>
+    <td width="50%"><img src="./assets/examples/sample-09.png" alt="XXD Panel 152"></td>
+    <td width="50%"><img src="./assets/examples/sample-10.png" alt="XXD Panel 152"></td>
+  </tr>
+</table>
 
-本项目已发布 8 张实际样片，包含横版与竖版，图片文件位于 `assets/examples/`。
+<p align="center"><sub>上半是原照片，下半是这个风格画出来的样子。</sub></p>
 
-| sample-05 | sample-06 |
-| --- | --- |
-| ![sample-05](assets/examples/sample-05.png) | ![sample-06](assets/examples/sample-06.png) |
-| sample-07 | sample-08 |
-| ![sample-07](assets/examples/sample-07.png) | ![sample-08](assets/examples/sample-08.png) |
-| sample-09 | sample-10 |
-| ![sample-09](assets/examples/sample-09.png) | ![sample-10](assets/examples/sample-10.png) |
-| sample-11 | sample-12 |
-| ![sample-11](assets/examples/sample-11.png) | ![sample-12](assets/examples/sample-12.png) |
+## 这是什么
 
-## 适用场景与解决的问题
+一个给 AI Agent（Claude Code、Codex 等）用的 Skill。你给它一张照片，它按 Panel 152 的原始提示词画出一张 PNG 成品。
 
-适合个人摄影整理、独立出版、展览练习和生活方式视觉创作。原图构图普通、背景杂乱或主体偏小，也可以通过删减、重组、裁切和尺度变化重新建立重点，而不是把照片套上滤镜。
+- **画成什么样：** 照片里最好认的主体被概括成少量手工剪下的纸片，边缘略不规则，带细腻纸纹和轻微叠层。画面上方是大片近白留白，下方是一整条横贯左右的纯色基座，主体正好落在两块颜色的分界处，身后可以垫一块几何色板。颜色取自照片的 2–4 种，调成明亮柔和的粉彩，没有透视、渐变和厚重阴影。只在留白或色块边缘放极少的几个字。
+- **关键词：** 剪纸拼贴 · 纯色基座 · 上下色域分割 · 粉彩色场 · 大面积留白
+- **能出哪些图：** 上下对照（上原图、下设计）、左右对照、只要设计图，或一套手机／平板／电脑／手表壁纸。可以多选，比例和像素随你定。
+- **不是什么：** 不是滤镜，也不是套模板：每张都从你的照片重新画，一张照片一个独立任务。
 
-下半部分提取照片中最具识别性的**主体、轮廓、结构、姿态与叙事关系**，重新做美术判断，重构为**色场基座式纸艺拼贴插画**。不要完整复制照片，也不要逐物转绘；主动删除绝大多数背景和无关细节，只保留最能代表原物的视觉记忆点，通过剪纸轮廓、纸片层叠、几何概括和少量纹理重新组织，使人一眼识别它与上方照片的对应关系。
+## 三步用起来
 
-## 使用窍门
-
-- **先给一张清楚的照片：** 先选一张主体、动作和关系都容易辨认的图，再决定输出方式与比例。
-- **一句话串起参数：** 直接说“上下对照 / 左右对照 / 纯设计 + 16:9 / 3:4 / 手机壁纸”，也可以补充电脑、平板或电子手表尺寸。
-- **把必须保留的内容说清楚：** 指定人物、物件、动作、关系和文字；避免同时规定过多布局细节，让风格有空间完成设计。
-- **文字有三种选择：** 让模型按图片智能生成、用 `--text exact --copy` 锁定逐字文案，或用 `--text none` 完全不要文字。
-- **说明现实区与设计区：** 上下或左右对照时，注明哪一侧保留照片、哪一侧负责设计转译；纯设计和壁纸则说明整张画布都要重新设计。
-- **先单张试，再批量做：** 先用一张图确认模式、比例、文字和语言，再把同一套参数用于目录批处理；每轮只改一个变量，结果更容易比较。
-
-## 开始使用
+**1. 安装。** Claude Code、Codex 等支持 Skills 的 Agent 都能用：
 
 ```bash
-git clone https://github.com/nevertoday/xxd-panel-152.git
 npx skills add https://github.com/nevertoday/xxd-panel-152 --skill xxd-panel-152
 ```
 
-安装后重新启动 Agent 会话，然后调用 `$xxd-panel-152`。也可以按需追加 `--global --agent codex --yes` 做用户级安装。
+装完重开一次 Agent 会话。也可以 `git clone` 本仓库，再把目录链接到 `~/.claude/skills/xxd-panel-152` 或 `~/.codex/skills/xxd-panel-152`。
 
-常用调用示例：
+**2. 确认 Agent 能生图。** 这个 Skill 不自带生图模型，用的是你 Agent 的生图能力，首选 GPT Image 2。
+
+- Codex 开着内置生图时直接能用。
+- Claude Code 等没有内置生图的 Agent，需要接一个 OpenAI 兼容的生图接口，五分钟配好，见[没有内置生图怎么配](#没有内置生图怎么配)。
+
+不确定也可以直接用。不能生图时 Skill 会先停下来告诉你，不会白跑。
+
+**3. 发照片，说一句话：**
+
+> 用 xxd-panel-152 把这张照片做成 3:4 上下对照海报，配中文标题。
+
+说清楚了就直接出图；没说到的（版式、比例、文字）它会问你，通常一两个问题。成品是 PNG，放在 `~/Desktop/xxd/xxd-panel-152/` 下本次任务的新文件夹里。
+
+## 什么照片效果好
+
+**效果好**
+
+- 主体轮廓清楚的照片：一个人、一只狗、一把椅子、一盆植物
+- 形状简单、能剪成几片纸的物件或建筑：一栋小房子、一只花瓶、一辆单车
+- 颜色明快、想做成清爽海报或文章配图的生活照
+
+**不太合适**
+
+- 靠细节取胜的图：精密机械、复杂纹样、需要看清五官的肖像
+- 必须交代完整环境的大场景，画面会被删到只剩一个主体
+- 想要写实透视、立体光影、渐变或 3D 效果的需求
+
+## 样张
+
+下面每张都是这个 Skill 用一张照片生成的成品。上下对照和左右对照用的是不同的照片。
+
+### 上下对照：上原照片，下设计
+
+<table>
+  <tr>
+    <td width="50%"><img src="./assets/examples/sample-09.png" alt="XXD Panel 152"></td>
+    <td width="50%"><img src="./assets/examples/sample-10.png" alt="XXD Panel 152"></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="./assets/examples/sample-11.png" alt="XXD Panel 152"></td>
+    <td width="50%"><img src="./assets/examples/sample-12.png" alt="XXD Panel 152"></td>
+  </tr>
+</table>
+
+### 左右对照：左原照片，右设计
+
+<table>
+  <tr>
+    <td width="50%"><img src="./assets/examples/sample-05.png" alt="XXD Panel 152"></td>
+    <td width="50%"><img src="./assets/examples/sample-06.png" alt="XXD Panel 152"></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="./assets/examples/sample-07.png" alt="XXD Panel 152"></td>
+    <td width="50%"><img src="./assets/examples/sample-08.png" alt="XXD Panel 152"></td>
+  </tr>
+</table>
+
+## 常用说法
+
+不用记参数，直接说就行：
+
+| 你想要 | 直接这样说 |
+|---|---|
+| 上下对照 | 做成 3:4 上下对照 |
+| 左右对照 | 做成 16:9 左右对照，左边放原图 |
+| 只要设计图 | 只要设计，不要原图，9:16 竖版 |
+| 一套壁纸 | 做一套手机、平板、电脑、手表壁纸，风格连起来 |
+| 一次多种比例 | 同一张做 1:1、3:4、16:9 各一张 |
+| 用自己的文字 | 标题就写「让风经过这里」，一个字都别改 |
+| 不要文字 | 不要任何文字 |
+| 指定文字语言 | 文字用日语 |
+| 整个文件夹 | 把这个文件夹里的照片都做成上下对照 |
+| 沿用上次 | 沿用上次的设置 |
+
+习惯命令行也行，参数和上面一一对应：
 
 ```text
 /xxd-panel-152 photo.jpg --mode top-bottom --size 3:4 --text prompt --locale zh-CN
-/xxd-panel-152 photo.jpg --mode left-right --size 16:9 --text prompt --locale en-US
 /xxd-panel-152 photo.jpg --mode design-only --size 9:16 --text none
-/xxd-panel-152 ./photos --mode design-only --size auto,3:4 --text prompt --locale ja-JP
+/xxd-panel-152 ./photos --mode left-right --size 16:9 --text prompt --locale en-US
 ```
 
-完整运行契约见 [SKILL.md](SKILL.md)；运行适配器见 [英文](references/xxd-panel-152-prompt.en.md) 与 [中文](references/xxd-panel-152-prompt.zh-CN.md)。
+全部参数见[参数参考](#参数参考)。
 
-## 原始提示词 · 五种语言
+## 常见问题
 
-[简体中文](references/original-prompt/zh-CN.md) · [English](references/original-prompt/en.md) · [日本語](references/original-prompt/ja.md) · [한국어](references/original-prompt/ko.md) · [العربية](references/original-prompt/ar.md)
+**一定要放原照片吗？** 不用。说「只要设计图」或者做壁纸，整张都是设计。
 
-中文文件逐字保留用户原始提示词，是运行时唯一的创作与审美权威。其余四语为完整、忠实的阅读译文，不参与改写生成指令。
+**文字是谁写的？** 默认由生图模型看着你的照片现写，你只定语言。要用自己的字就直说，会一字不改；也可以完全不要字。看起来像事实的信息（地名、日期、数字）只用你给的或照片里看得见的，不会编。
 
-## 快速判断：Panel 152 适合你吗？
+**不满意怎么办？** 说「再来一张」。它会从原照片重新画，而不是在上一张上修改，所以每次结果都不一样。
 
-既要保留源图身份，也要重新构图；既要材质特征，也要主动留白。可选准确文字、智能文案或无文字；支持单图、递归目录批量以及下方四种交付模式。
+**批量会不会串？** 不会。每张照片单独生成，不借用别的照片的颜色、文字或构图。整批只问一次设置。
 
-## 四种输出模式
+**我的照片会发到哪里？** 只发给你自己的 Agent 所用的生图模型。Skill 不往别处上传，也不在输出里显示接口地址和密钥。
 
-- `top-bottom`：整张画布只有上下两个全宽区域，现实照片在上、设计在下，严格各占 50%。
-- `left-right`：整张画布只有左右两个全高区域，现实照片在左、设计在右，严格各占 50%，不会旋转成上下结构。
-- `design-only`：整张画布只呈现 Panel 152 的设计转译，照片只作为不可见参考。
-- `wallpaper-pack`：按手机、iPad、桌面和手表分别生成完整设计壁纸，可选 `linked` 连贯套装或 `independent` 四张独立。
+**和其他 Panel 是什么关系？** XXD Panel 是一组风格，一个编号一种，互不影响，可以只装你喜欢的。想让 AI 按照片推荐风格，或者一次比较几个风格，用总目录 [xxd-panel-all](https://github.com/nevertoday/xxd-panel-all)。
 
-支持多选模式与比例（`1:1`、`3:4`、`4:3`、`4:5`、`5:4`、`2:3`、`3:2`、`9:16`、`16:9`、`21:9`、`5:7`、`7:5` 或准确像素），以及模型生成文字、准确文字和无文字。传入目录会递归扫描图片，每张源图独立处理，共用一次交付设置；最终 PNG 平铺放入一个新任务目录。
+## 原始提示词
+
+这个风格完全由小小东写的[原始提示词](references/original-prompt/zh-CN.md)决定。Skill 只在后面追加你选的版式、尺寸和文字设置，不总结、不翻译、不改写它。
+
+阅读译文（只供阅读，不参与出图）：[English](references/original-prompt/en.md) · [日本語](references/original-prompt/ja.md) · [한국어](references/original-prompt/ko.md) · [العربية](references/original-prompt/ar.md)
+
+## 没有内置生图怎么配
+
+需要一个支持 `gpt-image-2`（或兼容模型）的 OpenAI 兼容接口和它的 API Key。下面单独建一份配置，不影响你 Codex 本身的设置：
+
+```bash
+mkdir -p ~/.xxd-imagegen
+cat > ~/.xxd-imagegen/config.toml <<'EOF'
+model_provider = "image"
+
+[model_providers.image]
+base_url = "https://api.openai.com/v1"   # 或你的兼容接口
+env_key = "XXD_IMAGE_API_KEY"
+EOF
+
+# 写进 ~/.zshrc 或 ~/.bashrc，让 Agent 也能读到
+echo 'export XXD_IMAGEGEN_CODEX_DIR=~/.xxd-imagegen' >> ~/.zshrc
+echo 'export XXD_IMAGE_API_KEY=你的密钥' >> ~/.zshrc
+```
+
+重开终端和 Agent 后，在本 Skill 目录里检查一次：
+
+```bash
+python3 scripts/configured_imagegen.py probe
+```
+
+输出 `"ok":true` 就是通了；它只显示是否可用，不会打印地址和密钥。如果你的 Codex 已经通过兼容接口出图，不需要这一步。
+
+## 参数参考
+
+| 参数 | 取值 |
+|---|---|
+| `--mode` | `top-bottom` 上下对照 · `left-right` 左右对照 · `design-only` 只要设计 · `wallpaper-pack` 四端壁纸；可多选 |
+| `--size` | `auto` 智能推荐 · `source` 跟随原图 · `1:1` `3:4` `4:3` `4:5` `5:4` `2:3` `3:2` `9:16` `16:9` `21:9` `5:7` `7:5` · 准确像素如 `2160x3840`；可多选 |
+| `--text` | `prompt` 模型按照片写 · `exact` 用你的原文（配合 `--copy "…"`） · `none` 不要文字 |
+| `--locale` | 文字语言，如 `zh-CN` `en-US` `ja-JP` `ko-KR` `ar` |
+| `--wallpaper` | `linked` 四张风格连贯 · `independent` 四张各自独立 |
+| `--wallpaper-size` | 指定设备像素，如 `phone=1440x3200,desktop=3840x2160` |
+| `--out` | 换一个输出根目录（默认 `~/Desktop/xxd/xxd-panel-152/`） |
+| `--prefs` | `last` 沿用上次 · `edit` 在上次基础上改 · `new` 重新选 · `off` 这次不记住 · `clear` 清除记录 |
+
+- 参数齐全时不再提问，缺什么只问什么。`photo.jpg` 换成文件夹路径就是批量。
+- 多选会逐个生成：2 种模式 × 3 种比例 = 6 张，每张都按自己的画布重新构图，不是裁出来的。
+- 对照图严格 50:50：通常模型只画设计那一半，再由脚本把原照片原样拼上，所以分界在正中、原照片不会被改。
+- 文件名形如 `source-001-street-top-bottom-3x4-1152x1536.png`，全部平铺在一个任务文件夹里。
+- 只记住版式、尺寸、文字方式和语言这些设置，不记照片、文案和密钥。
 
 <!-- xxd-readme-ads:start -->
 ## 关于 XXD

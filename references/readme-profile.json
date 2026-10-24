@@ -1,0 +1,114 @@
+{
+  "skill_description": "XXD Panel 152｜Colour-field Paper Base: rebuilds the most recognisable subject of a photo as a cut-paper collage — a few hand-cut paper shapes with fine paper grain and slight overlaps — set on a split colour field: a large near-white space above and one solid, full-width colour band across the bottom, with the subject sitting on the dividing line and an optional geometric backing panel behind it. Soft, bright pastel palette of 2–4 colours taken from the photo, no perspective, gradients or heavy shadows, and only a few quiet words. Outputs PNG top-bottom or left-right comparisons, design-only images, or phone/tablet/desktop/watch wallpapers, from one photo or a folder. Use when the user invokes xxd-panel-152 or asks for cut-paper collage, pastel colour-field or paper-cut editorial illustration from a photo.",
+  "short_description": "色场基座纸艺志：把照片主体剪成纸片拼贴，稳稳落在一条贯穿底部的纯色基座上",
+  "zh-CN": {
+    "name": "色场基座纸艺志",
+    "tagline": "把照片主体剪成几片纸，拼贴在一条横贯底部的纯色色带上。",
+    "look": "照片里最好认的主体被概括成少量手工剪下的纸片，边缘略不规则，带细腻纸纹和轻微叠层。画面上方是大片近白留白，下方是一整条横贯左右的纯色基座，主体正好落在两块颜色的分界处，身后可以垫一块几何色板。颜色取自照片的 2–4 种，调成明亮柔和的粉彩，没有透视、渐变和厚重阴影。只在留白或色块边缘放极少的几个字。",
+    "traits": [
+      "剪纸拼贴",
+      "纯色基座",
+      "上下色域分割",
+      "粉彩色场",
+      "大面积留白"
+    ],
+    "good": [
+      "主体轮廓清楚的照片：一个人、一只狗、一把椅子、一盆植物",
+      "形状简单、能剪成几片纸的物件或建筑：一栋小房子、一只花瓶、一辆单车",
+      "颜色明快、想做成清爽海报或文章配图的生活照"
+    ],
+    "poor": [
+      "靠细节取胜的图：精密机械、复杂纹样、需要看清五官的肖像",
+      "必须交代完整环境的大场景，画面会被删到只剩一个主体",
+      "想要写实透视、立体光影、渐变或 3D 效果的需求"
+    ]
+  },
+  "en": {
+    "name": "Colour-field Paper Base",
+    "tagline": "Cuts the subject of your photo into a few paper shapes and sets them on a solid colour band.",
+    "look": "The most recognisable subject is reduced to a few hand-cut paper pieces with slightly uneven edges, fine paper grain and small overlaps. A wide near-white space fills the top, a single solid colour band runs across the full width at the bottom, and the subject sits on the line where the two meet, sometimes with a geometric backing panel behind it. Two to four colours from the photo become bright, soft pastels, with no perspective, gradients or heavy shadows. Only a few words appear, in the white space or along a colour edge.",
+    "traits": [
+      "Cut-paper collage",
+      "Solid colour base",
+      "Split colour field",
+      "Pastel palette",
+      "Generous whitespace"
+    ],
+    "good": [
+      "Photos with a clear outline: a person, a dog, a chair, a potted plant",
+      "Simple objects or buildings that can be cut from a few pieces of paper: a small house, a vase, a bicycle",
+      "Bright everyday photos you want as a clean poster or article image"
+    ],
+    "poor": [
+      "Images that depend on detail: precision machinery, intricate patterns, portraits where the face must read clearly",
+      "Wide scenes where the whole setting matters, since everything but one subject is cut away",
+      "Requests for realistic perspective, modelled lighting, gradients or a 3D look"
+    ]
+  },
+  "ja": {
+    "name": "色面ベースのペーパーアート",
+    "tagline": "写真の主役を数枚の紙に切り分け、下を横切る一枚の色帯の上に貼り合わせます。",
+    "look": "写真でいちばん目立つ主役を、手で切った数枚の紙片にまとめます。縁は少し不揃いで、細かな紙の目と軽い重なりが残ります。上は広い白に近い余白、下は画面の端から端まで続く一色のベースで、主役はその境目に乗り、背後に幾何学的な色板を置くこともあります。色は写真から二〜四色を取り、明るく柔らかなパステルに整え、遠近法やグラデーション、重い影は使いません。文字は余白か色面の縁にごくわずかだけ置きます。",
+    "traits": [
+      "切り紙コラージュ",
+      "単色のベース",
+      "上下の色面分割",
+      "パステル色面",
+      "大きな余白"
+    ],
+    "good": [
+      "輪郭がはっきりした写真：人物、犬、椅子、鉢植え",
+      "数枚の紙で切り出せる単純な形の物や建物：小さな家、花瓶、自転車",
+      "色が明るく、すっきりしたポスターや記事の挿絵にしたい日常写真"
+    ],
+    "poor": [
+      "細部が見どころの画像：精密な機械、複雑な模様、顔立ちをはっきり見せたい肖像",
+      "周囲の環境まで伝えたい広い場面（主役ひとつを残して削られます）",
+      "写実的な遠近感、立体的な陰影、グラデーション、3D の仕上がりを求める場合"
+    ]
+  },
+  "ko": {
+    "name": "색면 바탕 페이퍼 아트",
+    "tagline": "사진 속 주인공을 종이 몇 장으로 오려 아래를 가로지르는 단색 띠 위에 붙입니다.",
+    "look": "사진에서 가장 알아보기 쉬운 주인공을 손으로 오린 종이 몇 조각으로 줄입니다. 가장자리는 조금 고르지 않고, 섬세한 종이 결과 살짝 겹친 층이 남습니다. 위쪽은 넓은 흰 여백, 아래쪽은 화면 끝에서 끝까지 이어지는 단색 바탕이며, 주인공은 두 색이 만나는 경계에 놓이고 뒤에 기하학적 색판을 둘 수도 있습니다. 색은 사진에서 두세 가지, 많게는 네 가지를 골라 밝고 부드러운 파스텔로 정리하고, 원근이나 그러데이션, 짙은 그림자는 쓰지 않습니다. 글자는 여백이나 색면 가장자리에 아주 조금만 둡니다.",
+    "traits": [
+      "종이 콜라주",
+      "단색 바탕",
+      "위아래 색면 분할",
+      "파스텔 색면",
+      "넓은 여백"
+    ],
+    "good": [
+      "윤곽이 분명한 사진: 사람, 강아지, 의자, 화분",
+      "종이 몇 장으로 오려낼 수 있는 단순한 물건이나 건물: 작은 집, 꽃병, 자전거",
+      "색이 밝아 깔끔한 포스터나 글 삽화로 쓰고 싶은 일상 사진"
+    ],
+    "poor": [
+      "세부가 핵심인 이미지: 정밀 기계, 복잡한 무늬, 얼굴을 또렷이 보여야 하는 인물 사진",
+      "주변 환경 전체가 중요한 넓은 장면(주인공 하나만 남기고 지워집니다)",
+      "사실적인 원근, 입체 명암, 그러데이션, 3D 느낌을 원하는 경우"
+    ]
+  },
+  "ar": {
+    "name": "فن ورقي بقاعدة لونية",
+    "tagline": "يقصّ العنصر الرئيسي في صورتك إلى قطع ورق قليلة ويضعها على شريط لوني صلب في الأسفل.",
+    "look": "يُختزل أوضح عنصر في الصورة إلى قطع ورق قليلة مقصوصة باليد، حوافها غير منتظمة قليلاً، مع ملمس ورق ناعم وتراكب خفيف. يملأ الجزءَ العلوي فراغٌ واسع قريب من الأبيض، ويمتد في الأسفل شريط واحد بلون صلب على كامل العرض، ويستقر العنصر على خط التقائهما، وقد توضع خلفه لوحة هندسية ملوّنة. تُؤخذ من الصورة لونان إلى أربعة ألوان وتصبح ألوان باستيل فاتحة وناعمة، بلا منظور ولا تدرّجات ولا ظلال ثقيلة. لا تظهر إلا كلمات قليلة في الفراغ أو على حافة اللون.",
+    "traits": [
+      "كولاج ورق مقصوص",
+      "قاعدة بلون صلب",
+      "تقسيم لوني أفقي",
+      "ألوان باستيل",
+      "فراغ واسع"
+    ],
+    "good": [
+      "صور ذات حدود واضحة: شخص، كلب، كرسي، نبتة في أصيص",
+      "أشياء أو مبانٍ بسيطة الشكل يمكن قصّها من قطع ورق قليلة: بيت صغير، مزهرية، دراجة",
+      "صور يومية زاهية تريدها ملصقاً نظيفاً أو صورة لمقال"
+    ],
+    "poor": [
+      "صور تعتمد على التفاصيل: آلات دقيقة، زخارف معقدة، صور شخصية يجب أن تظهر ملامحها بوضوح",
+      "مشاهد واسعة يهمّ فيها المكان كله، إذ يُحذف كل شيء عدا عنصر واحد",
+      "طلب منظور واقعي أو إضاءة مجسّمة أو تدرّجات أو مظهر ثلاثي الأبعاد"
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 ---
 name: xxd-panel-152
-description: "Create XXD Panel 152 raster artwork from photographs using split-colour-field paper art, a near-white upper design field and a full-width solid lower base inside the design region, a subject at their boundary, 2–4 pastel colours and generous whitespace. Use when the user invokes xxd-panel-152 or requests this style. Supports individual images, isolated directory batches, strict 50:50 comparisons, design-only outputs, and wallpapers."
+description: "XXD Panel 152｜Colour-field Paper Base: rebuilds the most recognisable subject of a photo as a cut-paper collage — a few hand-cut paper shapes with fine paper grain and slight overlaps — set on a split colour field: a large near-white space above and one solid, full-width colour band across the bottom, with the subject sitting on the dividing line and an optional geometric backing panel behind it. Soft, bright pastel palette of 2–4 colours taken from the photo, no perspective, gradients or heavy shadows, and only a few quiet words. Outputs PNG top-bottom or left-right comparisons, design-only images, or phone/tablet/desktop/watch wallpapers, from one photo or a folder. Use when the user invokes xxd-panel-152 or asks for cut-paper collage, pastel colour-field or paper-cut editorial illustration from a photo."
 ---
 
 # XXD Panel 152
